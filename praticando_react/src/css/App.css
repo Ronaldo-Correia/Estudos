@@ -1,0 +1,14 @@
+.container{
+  display:flex;
+  flex-direction:row;
+  background-color: #ff0000;
+  justify-content:center;
+  align-items:center;
+  gap:1rem;
+  margin:1rem;
+  padding:1rem;
+}
+.contador{
+  font-size:2rem;
+  color:white;
+}

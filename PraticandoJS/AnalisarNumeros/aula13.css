@@ -1,0 +1,22 @@
+./        ,l.body { -
+  background. ,-color: blue;
+  text-align: center;
+}
+section {
+  background-color: white;
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+header {
+  color: white;
+}
+footer {
+  color: white;
+}
+select {
+  margin: 10px;
+  width: 150px;
+  height: 200px;
+}

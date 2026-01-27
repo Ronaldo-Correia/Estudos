@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cmake",
+      "label": "CMake: recompilação limpa",
+      "command": "cleanRebuild",
+      "targets": ["[N/A - Selecionar Kit]"],
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Tarefa do modelo CMake recompilação limpa"
+    },
+    {
+      "type": "Live Preview",
+      "workspacePath": "c:\\Users\\minat\\Documents\\Estudos\\PraticandoJS",
+      "problemMatcher": [],
+      "label": "Live Preview: Executar Servidor"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: cl.exe arquivo de build ativo",
+      "command": "cl.exe",
+      "args": [
+        "/Zi",
+        "/EHsc",
+        "/nologo",
+        "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
+        "${file}"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$msCompile"],
+      "group": "build",
+      "detail": "compilador: cl.exe"
+    }
+  ]
+}

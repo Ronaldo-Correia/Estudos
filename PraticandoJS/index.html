@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Aprendendo JavaScript</H1>
+    <p id="texto"></p>
+    <p>
+        <input type="text" onclick="alert('Input clicado!')" placeholder="Clique aqui">
+        
+        <table border="1">
+            <tr onclick="alert('Linha clicada!')">
+                <td>Célula 1</td>
+                <td>Célula 2</td>
+            </tr>
+        </table>
+
+        <a href="#" onclick="alert('Link clicado!'); return false;">Clique aqui</a>
+        <br>
+        <select name="Lista de jogos" id="jogos">
+            <option value="1">The Witcher</option>
+            <option value="2">Minecraft</option>
+            <option value="3">GTA 5</option>
+        </select>
+    </p>
+    <!-- Vincula o arquivo JavaScript externo -->
+    <script src="js/array.js"></script>
+</body>
+</html>
