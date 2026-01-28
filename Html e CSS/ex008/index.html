@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em dispositivos diferentes</p>
+        <picture>
+            <source media="(max-width:650px )" srcset="imagens/imgP.png" type="image/png">
+            <source media="(max-width:1050px )" srcset="imagens/imgM.png" type="image/png">
+            <img src="imagens/imgG.png" alt="Imagem flexivel">
+        </picture>
+        <h1>Reproduzir audio</h1>
+        <audio src="C:\Estudos\Html e CSS\ex008\audios\ZWE1HVNDXR - LOVELY BASTARDS.mp3" controls autoplay></audio>
+        <audio src="C:\Estudos\Html e CSS\ex008\audios\CUTE DEPRESSED.mp3"controls autoplay></audio>
+        
+        <h2>Reproduzir Video</h2>
+        <video width="600" poster="imagens/MineIcon.png" controls>
+            <source src="videos/mineVideo.mp4" type="video/mp4">
+
+        </video> 
+</body>
+</html>

@@ -92,3 +92,90 @@ Importações com alias:
 ```
 import Button from "@/components/Button";
 ```
+## 🌱 O que são componentes React
+- **🔹 Definição**
+  - _Componente = pedaço da interface que você cria e pode reutilizar._
+
+  - _Ele recebe props (informações vindas de fora) e retorna JSX (HTML dentro do JavaScript)._
+
+  - _Pode ter estado e controlar seu próprio comportamento._
+
+- **🔹 Componentes Funcionais**
+  - _São funções que retornam JSX._
+
+  - _Exemplo:_
+
+```
+function Saudacao(props) {
+  return <h1>Olá, {props.name}!</h1>
+}
+```
+  - _Uso:_
+```
+jsx
+<Saudacao name="João" />
+```
+👉 Mais simples e modernos. Com Hooks (useState, useEffect), eles podem ter estado e ciclo de vida.
+
+- **🔹 Componentes de Classe**
+
+  - _São classes que estendem React.Component._
+  - _Usam render() para devolver JSX._
+  - _Exemplo:_
+
+```
+class Saudacao extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}!</h1>
+  }
+}
+```
+👉 Podem ter estado (this.state) e métodos de ciclo de vida (componentDidMount, etc).
+
+🎯 Diferença principal
+Funcionais → simples, modernos, usam Hooks.
+
+Classe → mais antigos, usam this.state e métodos de ciclo de vida.
+
+## 🌱 O que são props?
+- **🔹 Definição**
+
+  - _Props = propriedades que você passa de um componente pai para um componente filho._
+
+  - _É como se fossem mensagens ou pacotes de dados que o pai entrega ao filho._
+
+  - _O filho não pode mudar os props, apenas usar._
+👉 Analogia simples:
+Imagina que o pai é uma cozinha e o filho é o garçom.
+O pai prepara a comida (dados) e entrega ao filho (props). O filho só leva a comida até a mesa, não muda a receita.
+
+- **🧩 Exemplo prático**
+```
+Componente Filho (Mensagem.jsx)
+jsx
+function Mensagem({ texto }) {
+  return <p>{texto}</p>
+}
+
+export default Mensagem
+```
+👉 Aqui o filho recebe um prop chamado texto e mostra na tela.
+```
+Componente Pai (App.jsx)
+jsx
+import Mensagem from './Mensagem'
+
+function App() {
+  return (
+    <div>
+      <h1>Exemplo de Props</h1>
+      <Mensagem texto="Olá Ronaldo, bem-vindo ao React!" />
+      <Mensagem texto="Props são como pacotes de informação." />
+    </div>
+  )
+}
+
+export default App
+```
+👉 O pai (App) passa diferentes valores para o prop texto.
+O filho (Mensagem) mostra cada um.

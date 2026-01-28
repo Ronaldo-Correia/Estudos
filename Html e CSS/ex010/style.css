@@ -1,0 +1,39 @@
+@charset "UTF-8";
+*{
+}
+
+body{
+    background-image: linear-gradient(to right,#DEEFE7,#B4BEC9);
+    padding: 20px;
+
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #1c6c6d6b(13, 132, 201);
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+}
+h1{
+    color:#159A9C ;
+    text-align: center;
+    text-shadow: 1px 2px 2px black;
+}
+h2{
+    color: #159A9C;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    height: 100vh;          /* O container ocupa toda a altura da janela */
+}
+
+#img3{
+   height: auto;
+   width: 300px; 
+}
+
